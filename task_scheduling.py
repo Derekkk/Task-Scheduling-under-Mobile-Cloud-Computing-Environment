@@ -406,7 +406,7 @@ if __name__ == '__main__':
     node9.parents = [node6]
     node10.parents = [node7, node8, node9]
 
-    start = time.clock()
+    start = time.time()
 
     node1.ready_time = 0
 
@@ -534,7 +534,7 @@ if __name__ == '__main__':
                 format(node.id, node.assignment + 1, node.rt_ws, node.rt_c, node.rt_wr, node.start_time[3]))
             print("-----------")
 
-    elapsed = (time.clock() - start)
+    elapsed = (time.time() - start)
     print("Time used:", elapsed)
     print("final sequence: ")
     for s in sequence:
